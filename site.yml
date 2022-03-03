@@ -1,5 +1,8 @@
 ---
-- name: wait
-  wait_for:
-    timeout: 600
-  delegate_to: localhost
+- name: Hello World Sample
+  hosts: localhost
+  tasks:
+    - name: wait
+      wait_for:
+        timeout: 600
+      delegate_to: localhost

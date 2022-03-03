@@ -1,3 +1,5 @@
 ---
-test: "ok"
-bar: "OK"
+- name: wait
+  wait_for:
+    timeout: 600
+  delegate_to: localhost

@@ -2,8 +2,6 @@
 - name: Hello World Sample
   hosts: localhost
   tasks:
-    - name: test
-      command: ls /
     - name: wait
       wait_for:
         timeout: 600
